@@ -8,6 +8,6 @@ class Song
   def self.new_by_filename(filename)
     name = filename.split(" - ")
     name = name[1]
-    @name = self.new(name)
+
   end
 end
