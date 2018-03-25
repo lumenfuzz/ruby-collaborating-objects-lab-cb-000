@@ -1,5 +1,5 @@
 class Artist
-  attr_accessor :name, :all
+  attr_accessor :name
   @@all = []
 
   def initialize(name)
@@ -23,6 +23,10 @@ class Artist
   end
 
   def print_songs
+  end
+
+  def self.all
+    return @@all
   end
 
 end
