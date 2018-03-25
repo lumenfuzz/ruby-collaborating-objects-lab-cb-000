@@ -1,4 +1,5 @@
 class MP3Importer
+  require 'pry'
   attr_accessor :path
 
   def initialize(file_path)
@@ -11,6 +12,7 @@ class MP3Importer
     full_file = Dir[full_path]
     full_file.each do |file|
       @files << file.split(@path)[0]
+      binding.pry
     end
   end
 
